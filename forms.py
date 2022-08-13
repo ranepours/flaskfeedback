@@ -20,3 +20,6 @@ class UserForm(FlaskForm):
 class FeedbackForm(FlaskForm):
     content = StringField("Feedback Text", validators=[InputRequired()])
     title = StringField("Title", validators=[InputRequired(), Length(max=100)])
+
+class DeleteForm(FlaskForm):
+    """delete"""
